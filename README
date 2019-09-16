@@ -26,3 +26,32 @@ Building
   $ make build             # same as `make lib && make && make image`
   $ make build_clean       # same as `make image_clean clean lib_clean`
 ```
+
+1.project/example/audio_play.c test code 
+a.test KWS function
+1)vim prj_config.h
+#define KWS
+2)vim gcc/Makefile
+CONFIG_KWS=y
+CONFIG_NS=n
+b.test NS and KWS function
+1)vim prj_config.h
+#define NS
+2)vim gcc/Makefile
+CONFIG_KWS=n
+CONFIG_NS=y
+3)vim audio_play.c
+#include kws.h
+c.test NS function
+1)vim prj_config.h
+#define NS
+2)vim gcc/Makefile
+CONFIG_KWS=n
+CONFIG_NS=y
+3)vim audio_play.c
+//kws_task task = kws_creade();
+//kws_status();
+
+
+
+
