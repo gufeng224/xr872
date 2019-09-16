@@ -1,0 +1,1 @@
+image.o: image.c

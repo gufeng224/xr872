@@ -1,0 +1,1 @@
+fferrno.o: fferrno.c

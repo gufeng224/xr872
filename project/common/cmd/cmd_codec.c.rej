@@ -1,0 +1,11 @@
+--- project/common/cmd/cmd_codec.c
++++ project/common/cmd/cmd_codec.c
+@@ -31,7 +31,7 @@
+ #include "cmd_codec.h"
+ #include "driver/chip/hal_gpio.h"
+ #include "driver/chip/hal_codec.h"
+-#include "../src/driver/chip/codec/codec.h"
++#include "driver/chip/codec.h"
+ #include "fft/fft.h"
+ 
+ 

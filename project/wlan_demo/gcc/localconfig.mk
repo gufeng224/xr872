@@ -1,0 +1,30 @@
+#
+# project local config options, override the global config options
+#
+
+# ----------------------------------------------------------------------------
+# board definition
+# ----------------------------------------------------------------------------
+__PRJ_CONFIG_BOARD = xradio_audio
+
+# ----------------------------------------------------------------------------
+# override global config options
+# ----------------------------------------------------------------------------
+# enable/disable wlan station mode, default to y
+export __CONFIG_WLAN_STA := y
+
+# enable/disable wps for wlan station mode, default to n
+export __CONFIG_WLAN_STA_WPS := n
+
+# enable/disable wlan hostap mode, default to y
+export __CONFIG_WLAN_AP := y
+
+# enable/disable XIP, default to y
+export __CONFIG_XIP := y
+
+export __CONFIG_PSRAM := y
+
+export __CONFIG_XPLAYER := y
+
+# enable/disable OTA, default to n
+export __CONFIG_OTA := y
